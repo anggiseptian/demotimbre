@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lingkaran_join">#7F000000</color>
+    <color name="lingkaran_cut">#7F000000</color>
+    <color name="lingkaran_convert">#7F000000</color>
+    <color name="lingkaran_omit">#7F000000</color>
+    <color name="lingkaran_split">#7F000000</color>
+    <color name="lingkaran_bitrate">#7F000000</color>
+    <color name="lingkaran_speed">#7F000000</color>
+    <color name="lingkaran_reverse">#7F000000</color>
+    <color name="lingkaran_volume">#7F000000</color>
+    <color name="tulisan">#F0F4F4</color>
+    <color name="judul">#FFF44336</color>
+    <color name="hitam">#000000</color>
+</resources>

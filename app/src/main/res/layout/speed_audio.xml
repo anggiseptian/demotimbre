@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/hitam"
+    android:onClick="speedAudio"
+    tools:context=".speedAudio">
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_launcher"
+        android:gravity="bottom|right"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:shrinkColumns="*"
+            android:gravity="bottom|right"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRowBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|right"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tks1"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/select_Image"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/lingkaran_button"
+                    android:textAllCaps="false"
+                    android:drawableTop="@drawable/ic_tambah"
+                    android:text="Audio"
+                    android:textColor="@color/tulisan" />
+
+                <TextView
+                    android:id="@+id/tk"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:text="Speed Audio"
+        android:textColor="@color/tulisan"
+        android:layout_below="@id/toolbar_dua"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAllCaps="false"
+        android:width="@android:dimen/thumbnail_width"
+        tools:textStyle="bold" />
+</androidx.constraintlayout.widget.ConstraintLayout>

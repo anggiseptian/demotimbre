@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1113">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_launcher"
+        android:gravity="top"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#7F000000"/>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRowBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/txa1"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/JoinAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_join"
+                    android:drawableTop="@drawable/ic_merge_type"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="JoinAudio"
+                    android:padding="1dp"
+                    android:text="Join"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txb1"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/cutAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_cut"
+                    android:drawableTop="@drawable/ic_content_cut"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="cutAudio"
+                    android:padding="1dp"
+                    android:text="Cut"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txc2"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/convertAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_convert"
+                    android:drawableTop="@drawable/ic_autorenew"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="convertAudio"
+                    android:padding="1dp"
+                    android:text="Convert"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txd2"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/txa2"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/omitAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_play"
+                    android:background="@drawable/lingkaran_omit"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="omitAudio"
+                    android:padding="1dp"
+                    android:text="Play"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txb"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/splitAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_call_split"
+                    android:background="@drawable/lingkaran_split"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="splitAudio"
+                    android:padding="1dp"
+                    android:text="Split"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txc3"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/bitrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_bitrate"
+                    android:drawableTop="@drawable/ic_line_style"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="bitrate"
+                    android:padding="1dp"
+                    android:text="Bitrate"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txd3"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/txa3"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/speedAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_speed"
+                    android:drawableTop="@drawable/ic_donut_large"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="speedAudio"
+                    android:padding="1dp"
+                    android:text="Speed"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txaa"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/reverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_music_video"
+                    android:background="@drawable/lingkaran_reverse"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="reverse"
+                    android:padding="1dp"
+                    android:text="Reverse"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txa"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/volumeAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_volume"
+                    android:background="@drawable/ligkaran_volume"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="volumeAudio"
+                    android:padding="1dp"
+                    android:text="Volume"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txd1"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_music_note"
+            android:text="Audio "
+            android:textColor="@color/tulisan"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </RelativeLayout>
+    <include
+        layout="@layout/video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

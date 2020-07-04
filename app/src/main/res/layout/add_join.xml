@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/hitam"
+    android:onClick="addJoin"
+    tools:context=".addJoin">
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_launcher"
+        android:gravity="center|center"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:shrinkColumns="*"
+        android:gravity="bottom|right"
+        android:stretchColumns="*">
+
+    <TextView
+        android:id="@+id/namaJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:onClick="addJoin"
+        android:textColor="@color/tulisan"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/lingkaran_button"
+        android:text="Info Audio"
+        android:onClick="addJoin"
+        android:textColor="@color/tulisan"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="148dp" />
+    </TableLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

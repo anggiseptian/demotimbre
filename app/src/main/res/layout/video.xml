@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1113">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_launcher"
+        android:gravity="center"
+        android:layout_marginTop="350dp">
+
+        <ImageView
+            android:layout_width="401dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#7F000000" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRowBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/txa1"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/joinVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_join"
+                    android:drawableTop="@drawable/ic_merge_type"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="joinVideo"
+                    android:text="Join"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txb1"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/cutVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_cut"
+                    android:drawableTop="@drawable/ic_content_cut"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="cutVideo"
+                    android:text="Cut"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txc2"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/convertVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_autorenew"
+                    android:background="@drawable/lingkaran_convert"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="convertVideo"
+                    android:text="Convert"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txd2"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/txa2"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/omitVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_low_priority"
+                    android:background="@drawable/lingkaran_omit"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="omitVideo"
+                    android:text="Omit"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txb"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/splitVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_call_split"
+                    android:background="@drawable/lingkaran_split"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="splitVideo"
+                    android:text="Split"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txc3"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/speedVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_bitrate"
+                    android:drawableTop="@drawable/ic_donut_large"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="speedVideo"
+                    android:text="Speed"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txd3"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/txa3"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/watermark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_speed"
+                    android:drawableTop="@drawable/ic_watermark"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="watermark"
+                    android:text="Watermark"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txaa"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/vtaVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_music_video"
+                    android:background="@drawable/lingkaran_reverse"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="vtaVideo"
+                    android:text="Video to Audio"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txa"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_volume_mute"
+                    android:background="@drawable/ligkaran_volume"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="mute"
+                    android:text="Mute"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txd1"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/image"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/ekstrak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:background="@drawable/lingkaran_speed"
+                    android:drawableTop="@drawable/ic_frames"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="ekstrak"
+                    android:text="Extract Frame"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/resize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_resize"
+                    android:background="@drawable/lingkaran_reverse"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="resize"
+                    android:text="Resize"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx2"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+
+                <Button
+                    android:id="@+id/gif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:drawableTop="@drawable/ic_gif"
+                    android:background="@drawable/ligkaran_volume"
+                    android:gravity="center|center_horizontal"
+                    android:padding="1dp"
+                    android:onClick="gif"
+                    android:text="Create GIF"
+                    android:textColor="@color/tulisan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx3"
+                    android:padding="2dp"
+                    android:text=""></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/txa4"
+                android:padding="2dp"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/volumeVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:background="@drawable/lingkaran_speed"
+                android:drawableTop="@drawable/ic_volume"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp"
+                android:onClick="volumeVideo"
+                android:text="Volume"
+                android:textColor="@color/tulisan"
+                android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_video"
+            android:text="Video"
+            android:textColor="@color/tulisan"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+</FrameLayout>
